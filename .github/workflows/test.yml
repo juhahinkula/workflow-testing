@@ -1,1 +1,12 @@
+name : test
 
+on: 
+  - push
+
+jobs:
+  first_job:
+    name: Print message
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World!"
+    
