@@ -12,6 +12,7 @@ jobs:
     
   second_job:
     name: Print more messages
+    needs: first_job
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello" again
