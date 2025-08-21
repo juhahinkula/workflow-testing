@@ -10,3 +10,8 @@ jobs:
     steps:
       - run: echo "Hello World!"
     
+  second_job:
+    name: Print more messages
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello" again
