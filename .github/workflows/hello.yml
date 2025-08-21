@@ -1,7 +1,12 @@
 name: Hello Workflow
 
 on: 
-  - push
+  workflow_run:
+    workflows:
+      - "Testing Workflows"
+    types:
+      - completed
+
 
 jobs:
   third_job:
