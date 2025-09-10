@@ -7,7 +7,6 @@ on:
     types:
       - completed
 
-
 jobs:
   third_job:
     runs-on: ubuntu-latest
