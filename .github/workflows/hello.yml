@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 
 env:
-  name: Juha
+  name: ${{vars.FIRST_NAME}}
 
 on: [push]
 jobs:
