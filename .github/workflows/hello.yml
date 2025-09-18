@@ -1,27 +1,9 @@
-<<<<<<< HEAD
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-
 on: [push]
-=======
-name: Hello Workflow
-
-on: workflow_dispatch
-
-#  workflow_run:
-#    workflows:
-#      - "First workflow"
-#    types:
-#      - completed
->>>>>>> a33f428f558faa3408f3481e72fb680364256883
-
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-<<<<<<< HEAD
-=======
-    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
->>>>>>> a33f428f558faa3408f3481e72fb680364256883
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
