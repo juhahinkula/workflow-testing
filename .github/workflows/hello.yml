@@ -16,16 +16,12 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
-      - if: ${{github.event.inputs.environment == 'staging'}}
-        run: echo "We are in staging"
-      - if: ${{github.event.inputs.environment == 'production'}}
-        run: echo "We are in production"
-
+    
   Second-Job:
     needs: Explore-GitHub-Actions
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello again"
-      - run: echo "My variable ${{vars.Test}}"
+      - run: echo "My variable ${{ vars.TEST }}"
+      - run: echo "My API TOKEN ${{ secrets.API_TOKEN }}"
 
