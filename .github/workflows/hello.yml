@@ -23,7 +23,7 @@ jobs:
         run: echo "We are in production"
 
   Second-Job:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Hello again"
 
