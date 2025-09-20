@@ -26,3 +26,9 @@ jobs:
         run: echo "We are in staging"
       - if: ${{github.event.inputs.environment == 'production'}}
         run: echo "We are in production"
+
+  Second-Job:
+    runs-on: ubuntu-lates
+    steps:
+      - run: echo "Hello again"
+
