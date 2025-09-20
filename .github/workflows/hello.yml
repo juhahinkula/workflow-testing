@@ -4,12 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        type: choice
+        type: environment
         description: "Select deployment environment"
-        options:
-        - production
-        - staging
-
+        
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
