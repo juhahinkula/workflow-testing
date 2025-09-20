@@ -23,6 +23,7 @@ jobs:
         run: echo "We are in production"
 
   Second-Job:
+    needs: Explore-GitHub-Actions
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello again"
