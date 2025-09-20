@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: push
         
-jobs:
+jobs: 
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
@@ -27,4 +27,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello again"
+      - run: echo "My variable ${{vars.Test}}"
 
